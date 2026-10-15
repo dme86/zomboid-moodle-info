@@ -1,0 +1,18 @@
+name: Lua CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leafo/gh-actions-lua@v10
+        with:
+          luaVersion: "5.3"
+      - name: Syntax check
+        run: find Contents -type f -name '*.lua' -exec luac -p {} \;
+      - name: Moodle focus mock
+        run: lua tests/test_moodle_focus.lua

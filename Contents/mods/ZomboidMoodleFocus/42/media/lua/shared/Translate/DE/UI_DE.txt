@@ -1,0 +1,5 @@
+UI_DE = {
+    UI_ZMF_Radial = "Moodles",
+    UI_ZMF_NoActive = "Keine aktiven Moodles",
+    UI_ZMF_ControllerHint = "Steuerkreuz hoch/runter: auswählen    A/B: schließen",
+}

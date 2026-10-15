@@ -1,0 +1,5 @@
+name=Zomboid Moodle Focus
+id=ZomboidMoodleFocus
+author=dme86
+modversion=0.1.0
+description=Shows a large name-and-description card when hovering moodles and adds a controller-friendly Moodles entry to the Back/View radial menu. Build 42.

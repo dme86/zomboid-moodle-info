@@ -1,0 +1,5 @@
+UI_EN = {
+    UI_ZMF_Radial = "Moodles",
+    UI_ZMF_NoActive = "No active moodles",
+    UI_ZMF_ControllerHint = "D-pad Up/Down: select    A/B: close",
+}
