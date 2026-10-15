@@ -1,0 +1,6 @@
+version=1
+workshopid=0
+title=Zomboid Moodle Info
+description=Hover a Moodle to show its enlarged icon, localized name and vanilla description. Controller users can open Moodle navigation from the Back/View radial menu. Build 42.
+visibility=private
+tags=Build 42;Interface

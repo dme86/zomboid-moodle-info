@@ -16,3 +16,9 @@ jobs:
         run: find Contents -type f -name '*.lua' -exec luac -p {} \;
       - name: Moodle focus mock
         run: lua tests/test_moodle_focus.lua
+      - name: Workshop package
+        run: zip -r ZomboidMoodleFocus.zip Contents workshop.txt preview.png -x '*.DS_Store'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ZomboidMoodleFocus
+          path: ZomboidMoodleFocus.zip

@@ -27,3 +27,23 @@ lua tests/test_moodle_focus.lua
 ```
 
 This is an initial Build 42 prototype. The Lua syntax and controller/hover behavior are covered by a standalone mock; live-game visual tuning may still be needed.
+
+## Steam Workshop
+
+The repository root is a complete Project Zomboid Workshop staging folder:
+
+```text
+ZomboidMoodleFocus/
+├── Contents/mods/ZomboidMoodleFocus/
+├── preview.png
+└── workshop.txt
+```
+
+Copy the whole folder to `~/Zomboid/Workshop/ZomboidMoodleFocus`, start the
+Steam version of Project Zomboid, and choose **Workshop → Create and update
+items**. Keep the first upload private while testing. Project Zomboid writes
+the assigned Steam item ID into `workshop.txt`; preserve and commit that ID so
+future uploads update the same item.
+
+GitHub Actions produces a ready-to-upload `ZomboidMoodleFocus.zip` artifact
+for every push.
